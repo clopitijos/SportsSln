@@ -100,10 +100,10 @@ namespace SportsStore.Models
                 if (!context.Products.Any(x => x.Name == p.Name))
                 {
                     context.Products.Add(p);
-                    addes = true;
+                    added = true;
                 }
             }
-            if (addes)
+            if (added)
             {
                 context.SaveChanges();
             }
