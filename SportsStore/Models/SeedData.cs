@@ -13,9 +13,8 @@ namespace SportsStore.Models
                 context.Database.Migrate();
             }
 
-            if (!context.Products.Any())
+            var seedProducts = new List<Product>
             {
-                context.Products.AddRange(
                     new Product
                     {
                         Name = "Kayak",
@@ -94,7 +93,18 @@ namespace SportsStore.Models
                         Category = "Equestrian",
                         Price = 249.99m
                     }
-                );
+            };
+            bool added = false;
+            foreach (var p in seedProducts)
+            {
+                if (!context.Products.Any(x => x.Name == p.Name))
+                {
+                    context.Products.Add(p);
+                    added = true;
+                }
+            }
+            if (added)
+            {
                 context.SaveChanges();
             }
         }
