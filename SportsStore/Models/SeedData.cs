@@ -94,7 +94,6 @@ namespace SportsStore.Models
                         Price = 249.99m
                     }
             };
-
             bool added = false;
             foreach (var p in seedProducts)
             {
