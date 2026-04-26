@@ -88,6 +88,13 @@ namespace SportsStore.Models
                     },
                     new Product
                     {
+                        Name = "GPS Running Watch",
+                        Description = "Water-resistant GPS watch with heart rate monitor and activity tracking",
+                        Category = "Running",
+                        Price = 149.99m
+                    },
+                    new Product
+                    {
                         Name = "Horse Saddle",
                         Description = "Leather saddle providing comfort and control for riders",
                         Category = "Equestrian",
@@ -99,6 +106,28 @@ namespace SportsStore.Models
                         Description = "Metal tools worn on the heels of riding boots to direct a horse",
                         Category = "Equestrian",
                         Price = 199.99m
+                    },
+                    new Product
+                    {
+                        Name = "Riding Helmet",
+                        Description = "Safety helmet designed to protect riders during falls",
+                        Category = "Equestrian",
+                        Price = 129.99m
+                    }
+                    ,
+                    new Product
+                    {
+                        Name = "Cycling Helmet",
+                        Description = "Lightweight, aerodynamic helmet with MIPS protection",
+                        Category = "Cycling",
+                        Price = 149.99m
+                    },
+                    new Product
+                    {
+                        Name = "Kayak Paddle",
+                        Description = "Lightweight carbon-fiber paddle for improved control and reduced fatigue",
+                        Category = "Watersports",
+                        Price = 59.99m
                     }
             };
             bool added = false;
