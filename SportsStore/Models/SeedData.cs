@@ -92,6 +92,13 @@ namespace SportsStore.Models
                         Description = "Leather saddle providing comfort and control for riders",
                         Category = "Equestrian",
                         Price = 249.99m
+                    },
+                    new Product
+                    {
+                        Name = "Spurs",
+                        Description = "Metal tools worn on the heels of riding boots to direct a horse",
+                        Category = "Equestrian",
+                        Price = 199.99m
                     }
             };
             bool added = false;
